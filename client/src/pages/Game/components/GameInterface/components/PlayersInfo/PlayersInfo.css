@@ -1,0 +1,33 @@
+.PlayersInfo {
+  display: flex;
+  justify-content: space-between;
+
+  max-width: 1800px;
+
+  margin: 10px auto 0;
+
+  font-size: 40px;
+}
+
+.PlayersInfo .players-info-item {
+  width: 38%;
+}
+
+.PlayersInfo .players-info-game-state {
+  width: 24%;
+  font-size: 80px;
+}
+
+.PlayersInfo .players-info-game-state.turn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  line-height: 60px;
+  font-size: 50px;
+}
+
+.PlayersInfo .players-info-item-score {
+  font-size: 60px;
+  font-weight: 700;
+}

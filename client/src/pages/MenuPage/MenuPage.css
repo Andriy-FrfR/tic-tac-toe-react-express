@@ -1,0 +1,22 @@
+.MenuPage {
+  height: auto;
+}
+
+.MenuPage .menu {
+  display: inline-block;
+  width: 600px;
+
+  margin: 150px auto 0;
+
+  border: 4px solid rgb(85, 85, 85);
+  border-radius: 10px;
+
+  padding: 20px;
+}
+
+.MenuPage .buttons {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 20px;
+}

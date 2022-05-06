@@ -1,0 +1,184 @@
+.GameField {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 450px;
+
+  margin: 30px auto;
+}
+
+.GameField .cell {
+  position: relative;
+
+  width: 150px;
+  height: 150px;
+
+  cursor: pointer;
+}
+
+.GameField .cell .material-symbols-outlined {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  -moz-user-select: -moz-none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.GameField .cell .material-symbols-outlined.x {
+  font-size: 160px;
+}
+
+.GameField .cell .material-symbols-outlined.o {
+  font-size: 130px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+}
+
+.GameField .horizontal-separator {
+  position: absolute;
+
+  width: 450px;
+  height: 15px;
+
+  border-radius: 10px;
+
+  background-color: rgb(0, 0, 0);
+}
+
+.GameField .vertical-separator {
+  position: absolute;
+
+  width: 15px;
+  height: 450px;
+
+  border-radius: 10px;
+
+  background-color: rgb(0, 0, 0);
+}
+
+.GameField .s1 {
+  top: 33.3%;
+  transform: translateY(-66.6%);
+}
+
+.GameField .s2 {
+  top: 66.6%;
+  transform: translateY(-33.3%);
+}
+
+.GameField .s3 {
+  left: 33.3%;
+  transform: translateX(-66.6%);
+}
+
+.GameField .s4 {
+  left: 66.6%;
+  transform: translateX(-33.3%);
+}
+
+.GameField .cross-out {
+  position: absolute;
+  z-index: -1;
+
+  width: 0;
+  height: 0;
+
+  border-radius: 10px;
+
+  background-color: #000;
+}
+
+.GameField .cross-out.co1 {
+  top: 16.6%;
+  transform: translateY(-50%);
+
+  width: 450px;
+  height: 15px;
+
+  transition: width 0.5s;
+}
+
+.GameField .cross-out.co2 {
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 450px;
+  height: 15px;
+
+  transition: width 0.5s;
+}
+
+.GameField .cross-out.co3 {
+  top: 83.3%;
+  transform: translateY(-50%);
+
+  width: 450px;
+  height: 15px;
+
+  transition: width 0.5s;
+}
+
+.GameField .cross-out.co4 {
+  left: 16.6%;
+  transform: translateX(-50%);
+
+  width: 15px;
+  height: 450px;
+
+  transition: height 0.5s;
+}
+
+.GameField .cross-out.co5 {
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 15px;
+  height: 450px;
+
+  transition: height 0.5s;
+}
+
+.GameField .cross-out.co6 {
+  left: 83.3%;
+  transform: translateX(-50%);
+
+  width: 15px;
+  height: 450px;
+
+  transition: height 0.5s;
+}
+
+.GameField .cross-out.co7 {
+  left: 20px;
+  top: 15px;
+
+  transform: rotate(45deg);
+  transform-origin: 0;
+
+  width: 580px;
+  height: 15px;
+
+  transition: width 0.5s;
+}
+
+.GameField .cross-out.co8 {
+  left: 20px;
+  bottom: 13px;
+
+  transform: rotate(-45deg);
+  transform-origin: 0;
+
+  width: 580px;
+  height: 15px;
+
+  transition: width 0.5s;
+}

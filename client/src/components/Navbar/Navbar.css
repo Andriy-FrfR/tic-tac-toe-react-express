@@ -1,0 +1,12 @@
+.Navbar {
+  height: 100px;
+}
+
+.Navbar .align-content-center {
+  display: flex;
+  align-items: center;
+}
+
+.Navbar .brand-logo {
+  font-size: 3rem;
+}

@@ -1,0 +1,33 @@
+.NextRoundCheckboxes .buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 450px;
+
+  margin: 20px auto 0;
+}
+
+.NextRoundCheckboxes .buttons .btn {
+  flex: 1 1 0;
+}
+
+.NextRoundCheckboxes .checkboxes {
+  display: flex;
+  justify-content: space-around;
+  width: 315px;
+
+  margin: 70px auto 0;
+}
+
+#cb-1::after,
+#cb-2::after {
+  transform: scale(2) translate(4px, 0);
+  border-width: 1px;
+}
+
+#cb-1::before,
+#cb-2::before {
+  left: 4px;
+  top: -5px;
+  width: 12px;
+  height: 20px;
+}
