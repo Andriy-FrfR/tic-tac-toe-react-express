@@ -29,7 +29,7 @@ if (process.env.NODE_ENV === 'production') {
 const server = new http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: [`http://localhost:${process.env.PORT}`, `http://localhost:3000`],
+    origin: [`http://localhost:${process.env.PORT}`],
     methods: ['GET', 'POST'],
   },
 });
