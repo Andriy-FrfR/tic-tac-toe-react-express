@@ -14,7 +14,6 @@ const {
 } = require('./helpers/functions');
 
 const port = process.env.PORT || 8080;
-
 const app = express();
 
 app.use(cors());
@@ -22,7 +21,7 @@ app.use(cors());
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('./client/build/static'));
 
-  app.get('*', (req, res) => {
+  app.get('/*', (req, res) => {
     res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
   });
 }
@@ -30,7 +29,8 @@ if (process.env.NODE_ENV === 'production') {
 const server = new http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: ['https://tic-tac-toe-react-express.herokuapp.com'],
+    origin: [`http://localhost:${process.env.PORT}`, `http://localhost:3000`],
+    methods: ['GET', 'POST'],
   },
 });
 
