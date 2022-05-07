@@ -167,10 +167,6 @@ io.on('connection', (socket) => {
       opponent = room.firstPlayer;
     }
 
-    if (player.isReadyForNextRound) {
-      return;
-    }
-
     player.isReadyForNextRound = true;
 
     if (player.isReadyForNextRound === opponent.isReadyForNextRound) {
