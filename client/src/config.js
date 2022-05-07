@@ -1,1 +1,1 @@
-export const baseURL = 'http://localhost:8080';
+export const baseURL = 'https://tic-tac-toe-react-express.herokuapp.com/';
