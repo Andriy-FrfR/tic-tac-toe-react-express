@@ -1,4 +1,4 @@
-import { useTicTacToe } from '../../../../../../hooks/useTicTacToe';
+import { useTicTacToe } from '../../../../hooks/useTicTacToe';
 import './PlayersInfo.css';
 
 const PlayersInfo = () => {

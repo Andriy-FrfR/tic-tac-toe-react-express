@@ -1,9 +1,9 @@
 import './GameInterface.css';
 import { useTicTacToe } from '../../../../hooks/useTicTacToe';
 import { useModals } from '../../../../hooks/useModals';
-import GameField from './components/GameField/GameField';
-import NextRoundCheckboxes from './components/NextRoundCheckboxes/NextRoundCheckboxes';
-import PlayersInfo from './components/PlayersInfo/PlayersInfo';
+import GameField from '../GameField/GameField';
+import NextRoundCheckboxes from '../NextRoundCheckboxes/NextRoundCheckboxes';
+import PlayersInfo from '../PlayersInfo/PlayersInfo';
 
 const GameInterface = () => {
   const ticTacToe = useTicTacToe();

@@ -1,5 +1,5 @@
 import './GameField.css';
-import { useTicTacToe } from '../../../../../../hooks/useTicTacToe';
+import { useTicTacToe } from '../../../../hooks/useTicTacToe';
 import { useEffect, useState } from 'react';
 
 const GameField = () => {

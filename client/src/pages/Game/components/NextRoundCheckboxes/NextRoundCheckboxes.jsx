@@ -1,6 +1,6 @@
 import './NextRoundCheckboxes.css';
-import { useModals } from '../../../../../../hooks/useModals';
-import { useTicTacToe } from '../../../../../../hooks/useTicTacToe';
+import { useModals } from '../../../../hooks/useModals';
+import { useTicTacToe } from '../../../../hooks/useTicTacToe';
 
 const NextRoundCheckboxes = () => {
   const ticTacToe = useTicTacToe();
